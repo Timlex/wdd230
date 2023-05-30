@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="larger.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="base.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development - [Omikunle Timileyin Micheal] course assignment portal">
@@ -46,14 +48,7 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script>
-        // Dynamically set the current year
-        const currentYear = new Date().getFullYear();
-        document.getElementById("currentYear").textContent = currentYear;
+    <script src="getDates.js"></script>
 
-        // Dynamically populate the last modified date
-        const lastModified = document.lastModified;
-        document.getElementById("lastModified").textContent = "Last Modified: " + lastModified;
-    </script>
 </body>
 </html>
