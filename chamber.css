@@ -37,3 +37,10 @@ body, h1, h2, h3, p, ul {
   section ul {
     list-style: disc
 }
+
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
