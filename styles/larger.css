@@ -5,30 +5,30 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  list-style-type: none;
+  list-style-type: none; /* Added this line to remove the dots */
 }
-
-/* Main Element */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Main Column Cards using CSS Grid */
-main section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-/* Course Links List */
-ul.course-links {
-  list-style-type: none;
-  padding: 0;
-}
+  
+  /* Main Element */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Main Column Cards using CSS Grid */
+  main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  /* Course Links List */
+  ul.course-links {
+    list-style-type: none;
+    padding: 0;
+  }
   
   /* Additional CSS alterations as needed for larger views */
   
