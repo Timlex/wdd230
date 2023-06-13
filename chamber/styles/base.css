@@ -1,0 +1,69 @@
+/* Normalize CSS */
+/* Add your normalize CSS styles here */
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header Styles */
+header,
+.grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburger-btn {
+  
+}
+
+.menu-items {
+  
+}
+
+/* Main Content Styles */
+main {
+  
+}
+
+/* Hero Styles */
+.hero {
+  
+}
+
+/* Call to Action Styles */
+.cta {
+  
+}
+
+/* Current Events Styles */
+.current-events {
+  
+}
+
+/* Weather Card Styles */
+.weather-card {
+  
+}
+
+/* Spotlights Styles */
+.spotlights {
+  
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
+}
