@@ -11,54 +11,169 @@ body {
 header,
 .grid,
 footer {
-  max-width: 840px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 /* Navigation Styles */
 nav {
-  background-color: steelblue;
+  background-color: #f1c40f;
   padding: 1rem;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .hamburger-btn {
-  
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
-.menu-items {
+.hamburger-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  /* Hide the hamburger button in the large view */
+  .hamburger-btn {
+    display: none;
+  }
+
+  /* Display the menu items in a horizontal row */
+  .menu-items {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
   
+  .menu-items li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    border-radius: 4px;
+  }
 }
 
 /* Main Content Styles */
 main {
-  
+  padding: 1rem;
 }
 
 /* Hero Styles */
 .hero {
-  
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #666;
+  font-size: 1.2rem;
 }
 
 /* Call to Action Styles */
 .cta {
-  
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 /* Current Events Styles */
 .current-events {
-  
+  margin-bottom: 2rem;
+}
+
+.current-events h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.current-events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.current-events li {
+  margin-bottom: 0.5rem;
+}
+
+.current-events li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.current-events li a:hover {
+  text-decoration: underline;
 }
 
 /* Weather Card Styles */
 .weather-card {
-  
+  background-color: #ecf0f1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.weather-card h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.weather-card p {
+  color: #666;
+  font-size: 1.2rem;
 }
 
 /* Spotlights Styles */
 .spotlights {
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.spotlight-item {
+  text-align: center;
+}
+
+.spotlight-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.spotlight-item h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-item p {
+  color: #666;
+  font-size: 1rem;
 }
 
 /* Footer Styles */
@@ -67,3 +182,22 @@ footer {
   border-top: 1px solid #000;
   text-align: center;
 }
+
+footer div {
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Script Styles */
+<script>
+  /* JavaScript for the hamburger button functionality */
+  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const menuItems = document.querySelector('.menu-items');
+
+  // Toggle the visibility of menu items on clicking the hamburger button
+  hamburgerBtn.addEventListener('click', () => {
+    menuItems.classList.toggle('show');
+  });
+</script>
+
