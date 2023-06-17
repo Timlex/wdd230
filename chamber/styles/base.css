@@ -190,14 +190,5 @@ footer div {
 }
 
 /* Script Styles */
-<script>
-  /* JavaScript for the hamburger button functionality */
-  const hamburgerBtn = document.querySelector('.hamburger-btn');
-  const menuItems = document.querySelector('.menu-items');
 
-  // Toggle the visibility of menu items on clicking the hamburger button
-  hamburgerBtn.addEventListener('click', () => {
-    menuItems.classList.toggle('show');
-  });
-</script>
 

@@ -84,6 +84,15 @@
             <div>Course: WDD 230</div>
             <div>Last modified: <span id="lastModified"></span></div>
           </footer>
-          <script src="script.js"></script>
+          <script src="script.js">
+              /* JavaScript for the hamburger button functionality */
+              const hamburgerBtn = document.querySelector('.hamburger-btn');
+              const menuItems = document.querySelector('.menu-items');
+            
+              // Toggle the visibility of menu items on clicking the hamburger button
+              hamburgerBtn.addEventListener('click', () => {
+                menuItems.classList.toggle('show');
+              })
+          </script>
         </body>
         </html>
