@@ -76,6 +76,26 @@ body {
   color: #333;
 }
 
+/* Dark mode styles */
+main.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Toggle button styles */
+.dark-mode-toggle {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
 /* Header Styles */
 header,
 .grid,

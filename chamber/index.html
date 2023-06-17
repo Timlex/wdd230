@@ -40,6 +40,7 @@
     </section>
 
     <div>
+      <div class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</div>
       <a href="#" class="cta-link">Become a Member</a>
     </div>
 
@@ -92,6 +93,12 @@
               // Toggle the visibility of menu items on clicking the hamburger button
               hamburgerBtn.addEventListener('click', () => {
                 menuItems.classList.toggle('show');
+
+                // JavaScript function to toggle dark mode
+              function toggleDarkMode() {
+              const mainElement = document.querySelector('main');
+              mainElement.classList.toggle('dark-mode');
+    }
               })
           </script>
         </body>
