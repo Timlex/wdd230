@@ -30,5 +30,27 @@ nav ul {
     padding: 0;
   }
   
-  
+  /* Navigation Styles */
+.menu-items {
+  display: flex;
+}
+
+/* Hamburger Button Styles */
+.hamburger-btn {
+  display: none;
+}
+
+/* Large View Styles */
+@media (min-width: 768px) {
+  /* Navigation Styles */
+  .menu-items {
+    display: block;
+  }
+
+  /* Hamburger Button Styles */
+  .hamburger-btn {
+    display: block;
+  }
+}
+
   

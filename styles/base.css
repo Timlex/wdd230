@@ -104,8 +104,59 @@ footer {
   text-align: center;
 }
 
+/* Header Styles */
 header,
 .grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburger-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 4px;
+}
+
+/* Dark mode styles */
+main.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Toggle button styles */
+.dark-mode-toggle {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+
 footer {
   max-width: 840px;
   margin: 0 auto;
