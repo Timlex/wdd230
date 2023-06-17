@@ -1,5 +1,74 @@
 /* Normalize CSS */
 /* Add your normalize CSS styles here */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set consistent box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Normalize headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* Normalize lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Normalize links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Base Styles */
 body {
