@@ -126,6 +126,30 @@ nav {
   height: 2px;
   background-color: #333;
   margin-bottom: 4px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+
+.hamburger-icon::before {
+  transform: translateY(-6px);
+}
+
+.hamburger-icon::after {
+  transform: translateY(6px);
+}
+
+/* Styles for open hamburger */
+.hamburger-btn.open .hamburger-icon {
+  transform: rotate(45deg);
+}
+
+.hamburger-btn.open .hamburger-icon::before {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.hamburger-btn.open .hamburger-icon::after {
+  transform: translateY(0) rotate(45deg);
 }
 
 @media (min-width: 768px) {
