@@ -15,6 +15,8 @@
         <img src="images/Profile.jpg" alt="Profile Image">
         <h1>Omikunle Timileyin Micheal</h1>
     </header>
+    <button class="hamburger-btn"></button>
+    <div class="menu-items"></div>
 
     <nav>
         <ul>
@@ -36,7 +38,9 @@
                 <li><a href="#">Learning Activity 3</a></li>
             </ul>
         </section>
-
+<div>
+<div class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</div>
+</div>
         <section class="card">
             <h3>Information</h3>
             <p>Weather: [Weather Placeholder]</p>
@@ -49,27 +53,5 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script>
-        // JavaScript for displaying the last modification date
-        const lastModifiedSpan = document.getElementById('lastModified');
-        const lastModified = new Date(document.lastModified);
-        lastModifiedSpan.textContent = lastModified.toDateString();
-
-        /* JavaScript for the hamburger button functionality */
-        const hamburgerBtn = document.querySelector('.hamburger-btn');
-        const menuItems = document.querySelector('nav ul');
-
-        // Toggle the visibility of menu items on clicking the hamburger button
-        hamburgerBtn.addEventListener('click', () => {
-            menuItems.classList.toggle('show-menu');
-        });
-
-        // JavaScript function to toggle dark mode
-        function toggleDarkMode() {
-            const mainElement = document.querySelector('main');
-            mainElement.classList.toggle('dark-mode');
-        }
-    </script>
-
 </body>
 </html>
