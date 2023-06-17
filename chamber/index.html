@@ -80,19 +80,24 @@
         
           </main>
           <footer>
-            <div>Contact information</div>
+            <div>Contact information: Chamber Contact Information</div>
             <div>Developer: Omikunle Timileyin Micheal</div>
             <div>Course: WDD 230</div>
             <div>Last modified: <span id="lastModified"></span></div>
           </footer>
           <script src="script.js">
-              /* JavaScript for the hamburger button functionality */
+              // JavaScript for displaying the last modification date
+              const lastModifiedSpan = document.getElementById('lastModified');
+              const lastModified = new Date(document.lastModified);
+              lastModifiedSpan.textContent = lastModified.toDateString();
+            
+            /* JavaScript for the hamburger button functionality */
               const hamburgerBtn = document.querySelector('.hamburger-btn');
               const menuItems = document.querySelector('.menu-items');
             
               // Toggle the visibility of menu items on clicking the hamburger button
               hamburgerBtn.addEventListener('click', () => {
-                menuItems.classList.toggle('show');
+                menuItems.classList.toggle('show-menu');
 
                 // JavaScript function to toggle dark mode
               function toggleDarkMode() {
