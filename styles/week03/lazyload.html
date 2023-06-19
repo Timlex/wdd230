@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lazy Load </title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Lazy Load </h1>
+  </header>
+  
+  <main>
+    <div id="image-container">
+      <picture>
+        <img src="images/placeholder.jpg" data-src="images/image1.jpg" alt="Image 1">
+      </picture>
+      <picture>
+        <img src="images/placeholder.jpg" data-src="images/image1.jpg" alt="Image 1">
+      </picture>
+      <picture>
+        <img src="images/placeholder.jpg" data-src="images/image1.jpg" alt="Image 1">
+      </picture>
+      <picture>
+        <img src="images/placeholder.jpg" data-src="images/image1.jpg" alt="Image 1">
+      </picture>
+      <picture>
+        <img src="images/placeholder.jpg" data-src="images/image1.jpg" alt="Image 1">
+      </picture>
+
+    </div>
+  </main>
+  
+  <footer>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+  
+  <script>
+    // JavaScript code to display last modified date
+    const lastModified = document.lastModified;
+    document.getElementById("last-modified").textContent = lastModified;
+  </script>
+</body>
+<script src="js/script.js"></script>
+
+</html>
