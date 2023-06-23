@@ -1,13 +1,4 @@
-/* Larger Views CSS Rules */
 
-/* Flex Navigation */
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style-type: none; /* Added this line to remove the dots */
-}
-  
   /* Main Element */
   main {
     display: grid;
@@ -17,23 +8,6 @@ nav ul {
     margin: 0 auto;
   }
   
-  /* Main Column Cards using CSS Grid */
-  main section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  /* Course Links List */
-  ul.course-links {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* Navigation Styles */
-.menu-items {
-  display: flex;
-}
 
 /* Hamburger Button Styles */
 .hamburger-btn {
@@ -53,4 +27,12 @@ nav ul {
   }
 }
 
-  
+.dark-mode-toggle {
+  background-color: #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #333;
+}
