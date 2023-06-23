@@ -1,161 +1,141 @@
-/* Universal Selector */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap') ;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') ;
+
+/* Define CSS variables for color scheme */
+:root {
+  --primary-color: #2B4162;
+  --secondary-color: #F2D492;
+  --accent-color: #F27348;
+}
+
+/* Reset default styles */
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
 
-/* Class Selectors */
-.box {
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-/* Adjusted aside rule */
-aside {
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
+/* Apply font family to the whole page */
 body {
-  font-size: 16px;
-  font-family: Roboto, Ariel, sans-serif;
-}
 
-.grid {
+    font-family: 'Roboto', sans-serif;
+  }  
+
+/* Header Styles */
+header {
+  margin: 1rem auto;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
-  align-items: center;
-}
-
-main {
-  grid-column: 2/3;
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-nav {
-  background-color: steelblue;
+  flex-direction: column-reverse;
+  justify-content: normal;
+  align-items: stretch;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+  color: white;
   padding: 1rem;
-  justify-content: space-evenly;
+}
+
+.header-container {
+  background-color: var(--primary-color);
+  display: flex;
   align-items: center;
-}
-
-nav a {
-  padding: 0rem;
-  text-decoration: none;
-  font-weight: 700;
-  color: #111;
-}
-
-
-h1 {
-  color: steelblue;
+  justify-content: space-between;
 }
 
 img {
-  width: 150px;
-  height: auto;
-  border: 1px solid steelblue;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-  float: right;
-  margin: 0 0 1rem 1rem;
-}
-
-p {
-  padding: 10px;
-  margin: 1rem;
-}
-
-main img {
-  /* other declarations here */
-  float: right;
-  width: 150px;
+  max-width: 100%;
   height: auto;
 }
 
-footer {
-  margin-top: 1em;
-  border-top: 1px solid #000;
-  text-align: center;
-}
-
-/* Header Styles */
-header,
-.grid,
-footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-/* Navigation Styles */
+img[alt="profile picture"] {
+    width: 200px; /* Adjust the value width */
+  }
+  
 nav {
-  background-color: steelblue;
-  padding: 1rem;
-  justify-content: space-evenly;
+  display: grid;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-end
+}
+
+nav ul {
+  display: flex;
   align-items: center;
+  list-style: none;
+  align-content: stretch
 }
 
-.hamburger-btn {
-  display: block;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+nav li:not(:last-child) {
+  margin-right: 1rem;
 }
 
-.hamburger-icon {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #333;
-  margin-bottom: 4px;
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
 }
+
+nav a:hover {
+  background-color: var(--secondary-color);
+}
+
+h {
+  margin-top: 20px; /* Adjust if needed */
+}
+
+h1 {
+  border-bottom: 1px solid black;
+}
+
+/* Main Styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+/* Additional CSS criteria */
+
+:root {
+  --primary-color: #2B4162;
+  --secondary-color: #F2D492;
+  --accent-color: #F27348;
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 1rem;
+  background-color: #ddd;
+}
+
+.activities {
+  background-color: #ddd;
+  color: black;
+}
+
+.information {
+  background-color: #ddd;
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.information p {
+  margin: 0;
+}
+
 
 footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-/* Dark mode styles */
-main.dark-mode {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: right;
+  padding: 1rem;
 }
 
-/* Toggle button styles */
-.dark-mode-toggle {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-.dark-mode-toggle:hover {
-  background-color: #555;
-}
