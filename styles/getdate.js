@@ -26,12 +26,14 @@ localStorage.setItem('visitCount', count);
 visitCounter.textContent = `Page visits: ${count}`;
 
 // JavaScript function to toggle dark mode
+
 function toggleDarkMode() {
-  const mainElement = document.querySelector('main');
-  mainElement.classList.toggle('dark-mode');
-};
+  var body = document.body;
+  body.classList.toggle('dark-mode');
+
 
 // Set the student name and country flag
 const studentName = "Omikunle Timileyin Micheal";
 const countryFlag = "Nigeria"; // Replace with the flag emoji for your country
+
 

@@ -31,4 +31,16 @@ nav ul {
     }
     
     
-    
+    /* CSS for sidebar layout */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Adjust the width of sidebar and main content as needed */
+  grid-gap: 20px; /* Adjust the gap between sidebar and main content as needed */
+}
+
+.sidebar {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
