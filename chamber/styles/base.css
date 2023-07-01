@@ -34,8 +34,6 @@ nav,
 section,
 main {
   margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -287,5 +285,78 @@ footer div {
   font-size: 0.8rem;
 }
 
+/* Form Styles */
+form {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #1026f1;
+  border-radius: 5px;
+}
 
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+
+/* Membership Benefits Styles */
+.membership-benefits {
+  margin-top: 20px;
+}
+
+.membership-benefits h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.membership-benefits ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+  .membership-benefits {
+    margin-top: 0;
+    width: 40%;
+  }
+
+form input[type="Submit Applications"] {
+  background-color: #007bff; /* Blue color */
+  color: #1601d3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Contact Form Styles */
+.contact-form input[type="Send Message"] {
+  background-color: #007bff; /* Blue color */
+  color: #1619eb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
