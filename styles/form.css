@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+  }
+
+
+  /* Reset default styles */
+* {
+    padding: 0; 
+    box-sizing: border-box;
+  }
+  
+  /* Apply font family to the whole page */
+  body {
+  
+      font-family: 'Roboto', sans-serif;
+    }  
+  
+  /* Header Styles */
+  header {
+    margin: 1rem auto;
+    display: grid;
+    flex-direction: column-reverse;
+    justify-content: normal;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  img[alt="profile picture"] {
+      width: 200px; /* Adjust the value width */
+    }
+    
+  nav {
+    display: grid;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: flex-end
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    align-content: stretch
+  }
+  
+  nav li:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  nav a:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  h {
+    margin-top: 20px; /* Adjust if needed */
+  }
+  
+  h1 {
+    border-bottom: 1px solid black;
+  }
+  
+  /* Main Styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  
+  /* Additional CSS criteria */
+  
+  :root {
+    --primary-color: #2B4162;
+    --secondary-color: #F2D492;
+    --accent-color: #F27348;
+  }
+  
+  .card {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+  }
+  
+  .activities {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .information {
+    background-color: #ddd;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .information p {
+    margin: 0;
+  }
+  
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: right;
+    padding: 1rem;
+  }

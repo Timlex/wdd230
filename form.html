@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form">
+    <title>Omikunle Timileyin Micheal - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/form.css">
+
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="images/Profile.jpg" alt="profile picture">
+                <h2>Omikunle Timileyin Micheal</h2>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><span></span></label>
+                <nav>
+                    <ul>
+                        <li><a href="">|Home|</a></li>
+                        <li><a href="">chamber</a></li>
+                        <li><a href="">site plan</a></li>
+                        <li><a href="">survey</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+      
+        <nav>
+          <!-- Navigation content goes here -->
+        </nav>
+      
+        <main>
+          <form action="record.html" method="get">
+            <div>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+      
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}">
+            </div>
+      
+            <div>
+              <label for="password-confirm">Confirm Password:</label>
+              <input type="password" id="password-confirm" name="password-confirm" required>
+            </div>
+      
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+            </div>
+      
+            <div>
+              <label for="rating">Page Rating:</label>
+              <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+              <output for="rating" id="rating-value"></output>
+            </div>
+      
+            <button type="submit">Submit</button>
+          </form>
+        </main>
+      
+        <footer>
+            <p id="footer-info">&copy; 2023 Omikunle Timileyin Micheal |Nigeria Flag Logo <span id="country-flag"></span></p>
+            <p id="lastModified"></p>
+            <a href="https://www.facebook.com"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram-logo.png" alt="Instagram logo"></a>
+          </footer>
+          <script src="scripts/form.js"></script>
+      </body>
+      
+      </html>
