@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Company 1",
+      "address": "123 Main Street",
+      "phone": "555-1234",
+      "website": "http://www.company1.com",
+      "membershipLevel": "Gold",
+      "image": "company1.png",
+      "otherInfo": "Additional information about Company 1"
+    },
+    {
+      "name": "Company 2",
+      "address": "456 Elm Street",
+      "phone": "555-5678",
+      "website": "http://www.company2.com",
+      "membershipLevel": "Silver",
+      "image": "company2.png",
+      "otherInfo": "Additional information about Company 2"
+    },
+    {
+      "name": "Company 3",
+      "address": "789 Oak Street",
+      "phone": "555-9012",
+      "website": "http://www.company3.com",
+      "membershipLevel": "Bronze",
+      "image": "company3.png",
+      "otherInfo": "Additional information about Company 3"
+    },
+    {
+      "name": "Company 4",
+      "address": "321 Maple Street",
+      "phone": "555-3456",
+      "website": "http://www.company4.com",
+      "membershipLevel": "Gold",
+      "image": "company4.png",
+      "otherInfo": "Additional information about Company 4"
+    },
+    {
+      "name": "Company 5",
+      "address": "654 Pine Street",
+      "phone": "555-7890",
+      "website": "http://www.company5.com",
+      "membershipLevel": "Silver",
+      "image": "company5.png",
+      "otherInfo": "Additional information about Company 5"
+    },
+    {
+      "name": "Company 6",
+      "address": "987 Cedar Street",
+      "phone": "555-2345",
+      "website": "http://www.company6.com",
+      "membershipLevel": "Bronze",
+      "image": "company6.png",
+      "otherInfo": "Additional information about Company 6"
+    },
+    {
+      "name": "Company 7",
+      "address": "876 Walnut Street",
+      "phone": "555-6789",
+      "website": "http://www.company7.com",
+      "membershipLevel": "Gold",
+      "image": "company7.png",
+      "otherInfo": "Additional information about Company 7"
+    }
+  ]
+  
