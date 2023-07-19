@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chamber of Commerce</title>
-  <meta name="description" content="Welcome to the Chamber of Commerce website.">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <!-- Add social media meta settings here -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatSIN Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the WhatSIN Chamber of Commerce website.">
+  <meta name="author" content="Omikunle Timileyin Micheal">
+  <link rel="icon" type="image/png" href="images/391137700-favicon.ico">
+  <meta property="og:title" content="WhatSIN Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://example.com/image.jpg">
+  <meta property="og:url" content="http:https://timlex.github.io/wdd230/chamber/index.html#">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header>
-        <img src="images/Whitewater.jpg" alt="Header Image">
-        <h1>Welcome to WhatSIN Chamber of Commerce</h1>
-      </header>
+  <header id="page-header">
+    <img src="images/Whitewater.jpg" alt="Header Image">
+    <h1>Welcome to WhatSIN Chamber of Commerce</h1>
+  </header>
 
-  <nav>
-    <!-- Common navigation content -->
+  <nav id="main-nav">
+    
     <div class="hamburger-menu">
-      <!-- Hamburger menu content -->
+        <button class="hamburger-btn" onclick="toggleMenu()">
+            <span class="hamburger-icon"></span>
+          </button>
     </div>
     <ul class="main-menu">
-      <!-- Main menu content -->
-      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="discover.html">Discover</a></li>
       <li><a href="join.html">Join</a></li>
       <li><a href="directory.html">Directory</a></li>
@@ -31,20 +37,25 @@
   </nav>
 
   <main>
-    <section class="hero">
-      <img src="images/donate.png" alt="Header Image">
-      <h1>Welcome to the Chamber of Commerce</h1>
+    <section id="hero-section" class="hero">
+      <img src="images/littlecoloradowide.jpg" alt="Header Image">
+      <h1>Welcome to WhatSIN Chamber of Commerce</h1>
       <p>Discover opportunities for business growth and community engagement.</p>
     </section>
+    
+    <div>
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</div>
+        <a href="#" class="cta-link">Become a Member</a>
+      </div>
 
-    <section class="call-to-action">
+    <section id="cta-section" class="call-to-action">
       <!-- Call to action content -->
       <h2>Join the Chamber of Commerce</h2>
       <p>Unlock the benefits of membership and be part of a thriving business community.</p>
       <a href="join.html" class="cta-button">Join Now</a>
     </section>
 
-    <section class="current-events">
+    <section id="events-section" class="current-events">
       <!-- Current events content -->
       <h2>Upcoming Events</h2>
       <div class="event">
@@ -53,7 +64,7 @@
       </div>
     </section>
 
-    <section class="weather-card">
+    <section id="weather-section" class="weather-card">
       <!-- Weather information content -->
       <h2>Weather Forecast</h2>
       <div class="weather-info">
@@ -80,7 +91,7 @@
       </div>
     </section>
 
-    <section class="spotlights">
+    <section id="spotlights-section" class="spotlights">
       <!-- Company spotlights content -->
       <h2>Featured Members</h2>
       <div class="member-spotlight">
@@ -96,23 +107,23 @@
     </section>
   </main>
 
-  <footer>
-    <!-- Common footer content -->
+  <footer id="page-footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra fringilla velit vitae sagittis.</p>
     <div class="contact-info">
-      <p>Contact us: 123 Main Street, City, State</p>
-      <p>Email: info@chamber.com</p>
-      <p>Phone: 123-456-7890</p>
+        <h4>Contact Information</h4>
+        <p>123 Malawy Oraimo, Ile=ife, Osun State, Zip:02201</p>
+        <p>Email: info@WhatSINchamber.com</p>
+        <p>Phone: (123) 456-7890</p>
     </div>
     <div class="development-info">
-      <p>Developed by: Your Full Name</p>
+      <p>Developed by: Omikunle Timileyin Micheal/p>
       <p>Course: WDD 230</p>
       <p>Last Modified: <span id="last-modified"></span></p>
     </div>
     <div class="social-media-icons">
-        <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-        <a href="https://twitter.com/yourhandle" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
-
-      </div>
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/twitter_ico.png" alt="Twitter"></a>
+    </div>
 
   </footer>
 

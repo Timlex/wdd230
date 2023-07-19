@@ -44,3 +44,34 @@ nav ul {
   padding: 20px;
 }
 
+/* Add CSS to enforce minimum tap target size and spacing */
+a,
+button,
+.cta-button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+/* Additional specific selectors */
+.main-menu li a {
+  padding: 8px 16px;
+}
+
+.member-spotlight {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+/* Set font size to be greater than or equal to 12px */
+body {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-size: 1rem;
+}

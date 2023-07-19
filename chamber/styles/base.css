@@ -143,8 +143,11 @@ nav {
 }
 
 /* Mobile view styles */
-@media (max-width: 767px) {
-  .menu-items {
+/* Adjust content sizing for mobile viewport */
+@media (max-width: 400px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
     display: none; /* Hide menu items in mobile view */
   }
 
