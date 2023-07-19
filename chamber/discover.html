@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatSIN Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the WhatSIN Chamber of Commerce website.">
+  <meta name="author" content="Omikunle Timileyin Micheal">
+  <link rel="icon" type="image/png" href="images/391137700-favicon.ico">
+  <meta property="og:title" content="WhatSIN Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://example.com/image.jpg">
+  <meta property="og:url" content="http:https://timlex.github.io/wdd230/chamber/index.html#">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <img src="images/Whitewater.jpg" alt="Header Image">
+    <h1>Welcome to WhatSIN Chamber of Commerce</h1>
+  </header>
+
+  <nav>
+    <button class="hamburger-btn" onclick="toggleMenu()">
+      <span class="hamburger-icon"></span>
+    </button>
+    <ul class="menu-items">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html" class="active">Discover</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="directory.html">Directory</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="sidebar">
+      <h3>Sidebar Content</h3>
+      <p>Provide information to the users such as demographics, statistical data, events, attractions, or a calendar.</p>
+      <p>You can customize this content based on your design and website's needs.</p>
+      
+      <div id="visit-message"></div>
+    </div>
+
+    <section class="gallery">
+      <h2>Local Photos of Interest</h2>
+      <div class="image-container">
+        <figure>
+          <img src="images/group.jpg" alt="Photo 1">
+          <figcaption>Caption for Photo 1</figcaption>
+        </figure>
+        <figure>
+          <img src="images/jog.jpg" alt="Photo 2">
+          <figcaption>Caption for Photo 2</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting.jpg" alt="Photo 3">
+          <figcaption>Caption for Photo 3</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting17_600.jpg" alt="Photo 4">
+          <figcaption>Caption for Photo 4</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting20_600.jpg" alt="Photo 5">
+          <figcaption>Caption for Photo 5</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting53_600.jpg" alt="Photo 6">
+          <figcaption>Caption for Photo 6</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer id="page-footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra fringilla velit vitae sagittis.</p>
+    <div class="contact-info">
+        <h4>Contact Information</h4>
+        <p>123 Malawy Oraimo, Ile=ife, Osun State, Zip:02201</p>
+        <p>Email: info@WhatSINchamber.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+    <div class="development-info">
+      <p>Developed by: Omikunle Timileyin Micheal</p>
+      <p>Course: WDD 230</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+    <div class="social-media-icons">
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/twitter_ico.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
