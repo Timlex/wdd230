@@ -155,6 +155,17 @@ nav {
     display: block; /* Show hamburger button in mobile view */
   }
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Large view styles */
 @media (min-width: 768px) {
