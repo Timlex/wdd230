@@ -1,3 +1,4 @@
+
 // JavaScript for displaying the last modification date
 const lastModifiedSpan = document.getElementById('lastModified');
 const lastModified = new Date(document.lastModified);

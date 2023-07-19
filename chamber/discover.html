@@ -42,34 +42,35 @@
     </div>
 
     <section class="gallery">
-      <h2>Local Photos of Interest</h2>
-      <div class="image-container">
-        <figure>
-          <img src="images/group.jpg" alt="Photo 1">
-          <figcaption>Caption for Photo 1</figcaption>
-        </figure>
-        <figure>
-          <img src="images/jog.jpg" alt="Photo 2">
-          <figcaption>Caption for Photo 2</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting.jpg" alt="Photo 3">
-          <figcaption>Caption for Photo 3</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting17_600.jpg" alt="Photo 4">
-          <figcaption>Caption for Photo 4</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting20_600.jpg" alt="Photo 5">
-          <figcaption>Caption for Photo 5</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting53_600.jpg" alt="Photo 6">
-          <figcaption>Caption for Photo 6</figcaption>
-        </figure>
-      </div>
-    </section>
+        <h2>Local Photos of Interest</h2>
+        <div class="image-container">
+          <figure>
+            <img src="images/group.jpg" data-src="images/group.jpg" alt="Photo 1" class="lazyload">
+            <figcaption>Caption for Photo 1</figcaption>
+          </figure>
+          <figure>
+            <img src="images/jog.jpg" data-src="images/jog.jpg" alt="Photo 2" class="lazyload">
+            <figcaption>Caption for Photo 2</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting.jpg" data-src="images/rafting.jpg" alt="Photo 3" class="lazyload">
+            <figcaption>Caption for Photo 3</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting17_600.jpg" data-src="images/rafting17_600.jpg" alt="Photo 4" class="lazyload">
+            <figcaption>Caption for Photo 4</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting20_600.jpg" data-src="images/rafting20_600.jpg" alt="Photo 5" class="lazyload">
+            <figcaption>Caption for Photo 5</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting53_600.jpg" data-src="images/rafting53_600.jpg" alt="Photo 6" class="lazyload">
+            <figcaption>Caption for Photo 6</figcaption>
+          </figure>
+        </div>
+      </section>
+      
   </main>
 
   <footer id="page-footer">
@@ -91,6 +92,7 @@
     </div>
   </footer>
 
+  <script src="scrips/lazysizes.min.js" async></script>
   <script src="scripts/getDates.js"></script>
   <script src="scripts/script.js"></script>
 </body>
