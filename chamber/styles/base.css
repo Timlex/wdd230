@@ -33,7 +33,6 @@ menu,
 nav,
 section,
 main {
-  margin: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -60,12 +59,6 @@ h6 {
 ul,
 ol {
   list-style: none;
-}
-
-/* Normalize links */
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /* Base Styles */
@@ -167,6 +160,25 @@ nav {
   }
 }
 
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.sidebar {
+  order: 2;
+}
+
+.gallery {
+  order: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
 /* Large view styles */
 @media (min-width: 768px) {
   .menu-items {
