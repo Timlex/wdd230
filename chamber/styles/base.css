@@ -135,6 +135,15 @@ nav {
   transform: translateY(0) rotate(45deg);
 }
 
+/* Apply hover effect to images in larger views */
+@media screen and (min-width: 768px) {
+  .image-container:hover img {
+    /* Add your hover effect styles here */
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
 /* Mobile view styles */
 /* Adjust content sizing for mobile viewport */
 @media (max-width: 400px) {

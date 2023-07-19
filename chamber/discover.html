@@ -40,37 +40,34 @@
       
       <div id="visit-message"></div>
     </div>
-
-    <section class="gallery">
-        <h2>Local Photos of Interest</h2>
-        <div class="image-container">
-          <figure>
-            <img src="images/group.jpg" data-src="images/group.jpg" alt="Photo 1" class="lazyload">
-            <figcaption>Caption for Photo 1</figcaption>
-          </figure>
-          <figure>
-            <img src="images/jog.jpg" data-src="images/jog.jpg" alt="Photo 2" class="lazyload">
-            <figcaption>Caption for Photo 2</figcaption>
-          </figure>
-          <figure>
-            <img src="images/rafting.jpg" data-src="images/rafting.jpg" alt="Photo 3" class="lazyload">
-            <figcaption>Caption for Photo 3</figcaption>
-          </figure>
-          <figure>
-            <img src="images/rafting17_600.jpg" data-src="images/rafting17_600.jpg" alt="Photo 4" class="lazyload">
-            <figcaption>Caption for Photo 4</figcaption>
-          </figure>
-          <figure>
-            <img src="images/rafting20_600.jpg" data-src="images/rafting20_600.jpg" alt="Photo 5" class="lazyload">
-            <figcaption>Caption for Photo 5</figcaption>
-          </figure>
-          <figure>
-            <img src="images/rafting53_600.jpg" data-src="images/rafting53_600.jpg" alt="Photo 6" class="lazyload">
-            <figcaption>Caption for Photo 6</figcaption>
-          </figure>
+      
+      <section id="image-gallery">
+        <div class="image">
+          <img src="images/group.jpg" alt="Image 1" loading="lazy" width="300" height="200">
+          <div class="caption">Caption for Image 1</div>
+        </div>
+        <div class="image">
+          <img src="images/jog.jpg" alt="Image 2" loading="lazy" width="300" height="200">
+          <div class="caption">Caption for Image 2</div>
+        </div>
+        <div class="image">
+          <img src="images/rafting.jpg" alt="Image 3" loading="lazy" width="300" height="200">
+          <div class="caption">Caption for Image 3</div>
+        </div>
+        <div class="image">
+          <img src="images/rafting17_600.jpg" alt="Image 4" loading="lazy" width="300" height="200">
+          <div class="caption">Caption for Image 4</div>
+        </div>
+        <div class="image">
+          <img src="images/rafting20_600.jpg" alt="Image 5" loading="lazy" width="300" height="200">
+          <div class="caption">Caption for Image 5</div>
+        </div>
+        <div class="image">
+          <img src="images/rafting53_600.jpg" alt="Image 6" loading="lazy" width="300" height="200">
+          <div class="caption">Caption for Image 6</div>
         </div>
       </section>
-      
+
   </main>
 
   <footer id="page-footer">
@@ -85,6 +82,9 @@
       <p>Developed by: Omikunle Timileyin Micheal</p>
       <p>Course: WDD 230</p>
       <p>Last Modified: <span id="last-modified"></span></p>
+      <!-- Display the days between user visits -->
+<p>Days since last visit: <span id="days-between"></span></p>
+
     </div>
     <div class="social-media-icons">
       <a href="https://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook"></a>

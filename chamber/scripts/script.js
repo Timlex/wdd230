@@ -59,3 +59,33 @@ function loadMembers() {
   window.onload = loadMembers;
   
 
+// Function to calculate the days between two dates
+function calculateDaysBetweenDates(date1, date2) {
+  const oneDay = 24 * 60 * 60 * 1000; // Number of milliseconds in a day
+  const firstDate = new Date(date1);
+  const secondDate = new Date(date2);
+
+  // Calculate the difference in days
+  const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+
+  return diffDays;
+}
+
+// Function to display the days between user visits
+function displayDaysBetweenVisits() {
+  const currentDate = new Date().toISOString().split("T")[0]; // Get the current date in YYYY-MM-DD format
+  const lastVisitDate = localStorage.getItem("lastVisitDate"); // Get the last visit date from local storage
+
+  if (lastVisitDate) {
+    const daysBetween = calculateDaysBetweenDates(lastVisitDate, currentDate);
+    document.getElementById("days-between").textContent = daysBetween;
+  } else {
+    document.getElementById("days-between").textContent = "First visit";
+  }
+
+  // Store the current visit date in local storage
+  localStorage.setItem("lastVisitDate", currentDate);
+}
+
+// Call the displayDaysBetweenVisits function when the page loads
+window.addEventListener("load", displayDaysBetweenVisits);
